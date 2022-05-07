@@ -1,10 +1,10 @@
-HOSTNAME=vcn.cloud
-NAMESPACE=edu
+HOSTNAME=registry.terraform.io
+NAMESPACE=adeleporte
 NAME=velocloud
 BINARY=terraform-provider-${NAME}
-VERSION=0.1
+VERSION=99
 OS_ARCH=darwin_amd64
-
+provider_path=registry.terraform.io/adelporte/
 default: install
 
 build:

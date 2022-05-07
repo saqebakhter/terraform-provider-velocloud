@@ -56,6 +56,7 @@ func Provider() *schema.Provider {
 			"velocloud_firewall_rules":    resourceFirewallRules(),
 			"velocloud_device_settings":   resourceDeviceSettings(),
 			"velocloud_enterprise":        resourceEnterprise(),
+			"velocloud_gateway":           resourceGateway(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"velocloud_profile":       dataSourceProfile(),
@@ -64,6 +65,7 @@ func Provider() *schema.Provider {
 			"velocloud_port_group":    dataSourcePortGroup(),
 			"velocloud_application":   dataSourceApplication(),
 			"velocloud_edge":          dataSourceEdge(),
+			"velocloud_gateway":       dataSourceGateway(),
 		},
 		ConfigureContextFunc: providerConfigure,
 	}
